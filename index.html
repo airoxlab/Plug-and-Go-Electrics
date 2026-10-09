@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plug and Go Electrics | Licensed Electrician, Mountain View CA | EV Chargers &amp; Panels | (650) 642-8318</title>
+<meta name="description" content="Plug and Go Electrics is a licensed C-10 electrical contractor (CSLB 1159810) in Mountain View, CA. EV charger installation, panel upgrades, lighting, outlets, rewiring and troubleshooting across Mountain View, Sunnyvale, Palo Alto, Los Altos and Cupertino. Bonded. Call (650) 642-8318.">
+<meta name="theme-color" content="#0b2b26">
+<meta property="og:title" content="Plug and Go Electrics | Mountain View, CA">
+<meta property="og:description" content="Licensed C-10 electrician, CSLB 1159810, bonded. EV chargers, panel upgrades, lighting and repairs in Mountain View and the Peninsula. (650) 642-8318.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+  :root{
+    --pine:#0b2b26; --pine-2:#123d36; --mint:#19d3a2; --mint-deep:#12a67f; --lime:#d9f99d;
+    --white:#ffffff; --cloud:#f3f7f5; --cloud-2:#e4ece8;
+    --ink:#0f1f1b; --muted:#56706a; --line:#d9e3de;
+    --bg:var(--cloud); --surface:var(--white); --text:var(--ink);
+    --r:18px; --shadow:0 22px 44px -28px rgba(11,43,38,.45);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){--bg:#0a1a17;--surface:#10251f;--cloud-2:#163129;--text:#eaf4f0;--muted:#9fb8b0;--line:#1f3a33;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
+  }
+  :root[data-theme="dark"]{--bg:#0a1a17;--surface:#10251f;--cloud-2:#163129;--text:#eaf4f0;--muted:#9fb8b0;--line:#1f3a33;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:"Sora",system-ui,sans-serif;font-weight:700;line-height:1.05;letter-spacing:-.025em;margin:0}
+  h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}
+  h3{font-size:1.2rem}
+  p{margin:0 0 1rem}
+  .wrap{width:min(1180px,calc(100% - 2.5rem));margin-inline:auto}
+  section{scroll-margin-top:5rem}
+  .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mint-deep)}
+  .eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--mint)}
+  .lead{font-size:1.1rem;color:var(--muted);max-width:60ch}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:.97rem;border:2px solid transparent;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-mint{background:var(--mint);color:var(--pine)}
+  .btn-mint:hover{background:var(--mint-deep);color:#fff}
+  .btn-pine{background:var(--pine);color:#fff}
+  .btn-white{background:#fff;color:var(--pine)}
+  .btn-ghost{border-color:currentColor;background:transparent}
+
+  .site-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .headbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.65rem 0}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+  .brand .mark{width:44px;height:44px;border-radius:12px;background:var(--pine);display:grid;place-items:center;flex:none}
+  .brand .mark svg{width:24px;height:24px;stroke:var(--mint);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .brand b{font-family:"Sora",sans-serif;font-weight:800;font-size:1.15rem;line-height:1;display:block;letter-spacing:-.02em}
+  .brand small{display:block;font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+  nav.top{display:none;gap:1.3rem;font-weight:600;font-size:.92rem}
+  nav.top a{text-decoration:none;color:var(--text);opacity:.85}
+  nav.top a:hover{opacity:1;color:var(--mint-deep)}
+  .head-cta{display:none}
+  .tap{display:inline-flex;align-items:center;gap:.4rem;background:var(--pine);color:#fff;text-decoration:none;font-weight:700;padding:.6rem 1.05rem;border-radius:999px;font-size:.9rem}
+  @media(min-width:940px){nav.top{display:flex}.head-cta{display:block}}
+
+  .hero{background:var(--pine);color:#fff;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 85% 15%,rgba(25,211,162,.22),transparent 65%),radial-gradient(35% 45% at 5% 95%,rgba(217,249,157,.12),transparent 65%)}
+  .hero-grid{position:relative;display:grid;gap:2.5rem;align-items:center;padding:4.5rem 0 4rem}
+  .hero .tag{display:inline-flex;align-items:center;gap:.6rem;background:rgba(25,211,162,.12);border:1px solid rgba(25,211,162,.45);padding:.45rem .95rem;border-radius:999px;font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem;color:var(--mint)}
+  .hero h1{font-size:clamp(2.7rem,6.8vw,5.2rem);max-width:13ch}
+  .hero h1 span{color:var(--mint)}
+  .hero p{font-size:clamp(1.05rem,1.5vw,1.22rem);max-width:52ch;margin:1.1rem 0 1.6rem;color:rgba(255,255,255,.88)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.15);font-size:.9rem}
+  .hero-meta b{display:block;font-family:"Sora",sans-serif;font-size:1.5rem;line-height:1;color:var(--mint)}
+  .hero-meta span{color:rgba(255,255,255,.72)}
+  .lic-card{background:#fff;color:var(--pine);border-radius:22px;padding:1.6rem;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);max-width:420px;width:100%;justify-self:center;display:grid;gap:.9rem}
+  .lic-card .lbl{font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--mint-deep)}
+  .lic-card .num{font-family:"Sora",sans-serif;font-size:3rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .lic-card dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem .8rem;font-size:.92rem}
+  .lic-card dt{color:var(--muted);font-weight:500}
+  .lic-card dd{margin:0;font-weight:700}
+  .lic-card a.v{font-weight:700;color:var(--mint-deep);text-decoration:none;font-size:.9rem}
+  @media(min-width:900px){.hero-grid{grid-template-columns:7fr 5fr}}
+
+  .strip{background:var(--mint);color:var(--pine)}
+  .strip-row{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 2.4rem;padding:.8rem 0;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+  .strip-row span::before{content:"⚡";margin-right:.4rem}
+
+  .section{padding:clamp(4rem,8vw,6.5rem) 0}
+  .section-head{max-width:70ch;margin-bottom:2.4rem}
+  .section-head h2{margin:.6rem 0 .9rem}
+  .center{text-align:center;margin-inline:auto}
+  .center .lead{margin-inline:auto}
+
+  .evhero{background:var(--surface);border-block:1px solid var(--line)}
+  .ev-grid{display:grid;gap:2rem;align-items:center}
+  .ev-card{background:var(--pine);color:#fff;border-radius:var(--r);padding:1.8rem;display:grid;gap:1rem}
+  .ev-card h3{color:var(--mint);font-size:1.5rem}
+  .ev-card ol{margin:0;padding-left:1.2rem;display:grid;gap:.6rem;color:rgba(255,255,255,.88)}
+  .ev-card ol b{color:#fff}
+  .brands{display:flex;flex-wrap:wrap;gap:.5rem}
+  .brands span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:.35rem .75rem;border-radius:999px;font-size:.82rem;font-weight:600}
+  .checks{list-style:none;padding:0;margin:1.2rem 0 1.6rem;display:grid;gap:.6rem}
+  .checks li{display:flex;gap:.7rem;align-items:flex-start}
+  .checks li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--mint);margin-top:.15rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b2b26' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E");background-size:13px;background-repeat:no-repeat;background-position:center}
+  @media(min-width:880px){.ev-grid{grid-template-columns:6fr 5fr}}
+
+  .svc-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+  .svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow)}
+  .svc .ico{width:46px;height:46px;border-radius:12px;background:var(--cloud-2);display:grid;place-items:center;margin-bottom:.9rem}
+  .svc .ico svg{width:24px;height:24px;stroke:var(--mint-deep);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{margin-bottom:.4rem}
+  .svc p{margin:0;color:var(--muted);font-size:.95rem}
+  @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+
+  .why{background:var(--surface);border-block:1px solid var(--line)}
+  .why-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+  .wcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem;display:flex;gap:1rem;align-items:flex-start}
+  .wcard .n{flex:none;width:40px;height:40px;border-radius:50%;background:var(--pine);color:var(--mint);display:grid;place-items:center;font-family:"Sora",sans-serif;font-weight:800}
+  .wcard b{display:block;margin-bottom:.2rem}
+  .wcard span{color:var(--muted);font-size:.93rem}
+  @media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1040px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+
+  .area-grid{display:grid;gap:2rem;align-items:center}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0 0}
+  .towns span{background:var(--surface);border:1px solid var(--line);padding:.45rem .85rem;border-radius:999px;font-weight:600;font-size:.88rem}
+  .towns span.base{background:var(--pine);color:var(--mint);border-color:var(--pine)}
+  .map{border-radius:var(--r);overflow:hidden;min-height:320px;background:var(--cloud-2);border:1px solid var(--line)}
+  .map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+  @media(min-width:880px){.area-grid{grid-template-columns:1fr 1fr}}
+
+  .contact{background:var(--pine);color:#fff}
+  .contact .eyebrow{color:var(--mint)}
+  .contact .lead{color:rgba(255,255,255,.8)}
+  .c-grid{display:grid;gap:1rem}
+  .cbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:1.3rem 1.4rem}
+  .cbox .lbl{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);font-weight:800;margin-bottom:.4rem}
+  .cbox a{color:#fff;text-decoration:none;font-family:"Sora",sans-serif;font-weight:700;font-size:1.5rem;line-height:1}
+  .cbox a.sm{font-family:"Public Sans",sans-serif;font-size:1rem}
+  .cbox a:hover{color:var(--mint)}
+  .cbox small{display:block;color:rgba(255,255,255,.7);margin-top:.4rem}
+  .c-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.6rem}
+  @media(min-width:760px){.c-grid{grid-template-columns:repeat(3,1fr)}}
+
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;background:var(--pine);border-top:1px solid rgba(255,255,255,.15)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem;color:#fff;text-decoration:none;font-weight:800;font-size:.95rem}
+  .callbar a.m{background:var(--mint);color:var(--pine)}
+  @media(min-width:940px){.callbar{display:none}}
+  body{padding-bottom:3.4rem}
+  @media(min-width:940px){body{padding-bottom:0}}
+
+  footer.site{background:#071d19;color:rgba(255,255,255,.75);padding:2.2rem 0 1.6rem;font-size:.88rem;border-top:1px solid rgba(255,255,255,.08)}
+  .foot-top{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
+  .foot-top .brand b{color:#fff}
+  .foot-links{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;font-weight:600}
+  .foot-links a{text-decoration:none;color:rgba(255,255,255,.85)}
+  .foot-links a:hover{color:var(--mint)}
+  .foot-note{color:rgba(255,255,255,.55);font-size:.8rem;max-width:90ch}
+  .foot-note a{color:rgba(255,255,255,.75)}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="wrap headbar">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3v5M15 3v5"/><path d="M6 8h12v3a6 6 0 01-12 0z"/><path d="M12 17v4"/></svg></span>
+      <span><b>Plug and Go Electrics</b><small>Mountain View, CA</small></span>
+    </a>
+    <nav class="top" aria-label="Sections">
+      <a href="#ev">EV Chargers</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="head-cta"><a class="tap" href="tel:+16506428318">(650) 642-8318</a></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Licensed C-10 · Bonded · Mountain View</span>
+        <h1>Plug in. <span>Charge up.</span> Done to code.</h1>
+        <p>Plug and Go Electrics is a state-licensed C-10 electrical contractor based in Mountain View, serving Sunnyvale, Palo Alto, Los Altos, Cupertino and the Peninsula. EV charger installs, panel upgrades, lighting, outlets, rewiring and troubleshooting &mdash; by the licensed electrician, not a subcontractor.</p>
+        <div class="hero-actions">
+          <a class="btn btn-mint" href="tel:+16506428318">Call (650) 642-8318</a>
+          <a class="btn btn-white" href="#ev">EV charger installs</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>C-10</b><span>electrical contractor</span></div>
+          <div><b>Bonded</b><span>$25,000 contractor bond</span></div>
+          <div><b>Owner-run</b><span>one licensed contact</span></div>
+        </div>
+      </div>
+      <div class="lic-card reveal">
+        <span class="lbl">California license</span>
+        <div class="num">1159810</div>
+        <dl>
+          <dt>Classification</dt><dd>C-10 Electrical</dd>
+          <dt>Status</dt><dd>Active</dd>
+          <dt>Issued</dt><dd>Aug 2026</dd>
+          <dt>Bond</dt><dd>$25,000 · Jet Insurance</dd>
+        </dl>
+        <a class="v" href="https://www.cslb.ca.gov/1159810" target="_blank" rel="noopener">Verify on the CSLB website →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. STRIP -->
+  <div class="strip" aria-label="Highlights">
+    <div class="wrap strip-row">
+      <span>EV chargers</span><span>Panel upgrades</span><span>Lighting</span><span>Outlets &amp; circuits</span><span>Rewiring</span><span>Troubleshooting</span>
+    </div>
+  </div>
+
+  <!-- 3. EV -->
+  <section class="section evhero" id="ev">
+    <div class="wrap ev-grid">
+      <div class="reveal">
+        <span class="eyebrow">EV charger installation</span>
+        <h2 style="margin:.6rem 0 .9rem">Home charging, installed right the first time.</h2>
+        <p class="lead">Mountain View has more EVs per driveway than almost anywhere. A Level 2 charger needs a dedicated 40 to 60 amp circuit, the right breaker, and a panel that can take the load. We check all three before quoting, so there are no surprises on install day.</p>
+        <ul class="checks">
+          <li>Load calculation first &mdash; many homes do not need a full panel upgrade</li>
+          <li>Hardwired or NEMA 14-50 outlet, whichever suits your charger and garage</li>
+          <li>Permit and inspection handled with the City of Mountain View or your city</li>
+          <li>Charger mounted, wired, tested with your car and app before we leave</li>
+        </ul>
+        <a class="btn btn-pine" href="tel:+16506428318">Get an EV charger quote</a>
+      </div>
+      <div class="ev-card reveal">
+        <h3>Chargers we install</h3>
+        <div class="brands"><span>Tesla Wall Connector</span><span>ChargePoint Home Flex</span><span>Emporia</span><span>Wallbox</span><span>JuiceBox</span><span>Grizzl-E</span><span>Ford Charge Station Pro</span><span>Any UL-listed Level 2</span></div>
+        <h3 style="margin-top:.4rem">How it goes</h3>
+        <ol>
+          <li><b>Send a photo</b> of your panel and where the car parks.</li>
+          <li><b>Quote</b> with circuit size, outlet vs hardwire, and whether the panel needs work.</li>
+          <li><b>Install day</b>, usually a few hours. Inspection scheduled if required.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">All services</span>
+        <h2>Everything a C-10 license covers.</h2>
+        <p class="lead">Residential service and small commercial. Pulled to code, permitted where required, tested before we leave.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h6"/></svg></div><h3>Panel upgrades</h3><p>100A to 200A service upgrades, sub-panels for ADUs and garages, breaker replacement, and retiring old Zinsco or Federal Pacific panels.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0012 3z"/></svg></div><h3>Lighting</h3><p>Recessed LED, under-cabinet, dimmers, ceiling fans, exterior and landscape lighting.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9v2M15 9v2M10 15h4"/></svg></div><h3>Outlets &amp; circuits</h3><p>New circuits, GFCI and AFCI protection, 240V for ranges, dryers, heat pumps and hot tubs, USB and smart outlets.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 12c3-4 6 4 9 0s6 4 9 0"/><path d="M3 18c3-4 6 4 9 0s6 4 9 0"/></svg></div><h3>Rewiring &amp; remodels</h3><p>Kitchen and bath remodel wiring, ADU and addition electrical, aluminum and knob-and-tube replacement.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/><path d="M11 8v3l2 1"/></svg></div><h3>Troubleshooting</h3><p>Tripping breakers, flickering lights, dead outlets, warm switches. Found, explained, fixed.</p></article>
+        <article class="svc reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V8a4 4 0 014-4h8a4 4 0 014 4v12"/><path d="M9 20v-4h6v4"/></svg></div><h3>Small commercial</h3><p>Tenant improvements, lighting retrofits, dedicated equipment circuits and workplace EV charging for small offices and shops.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WHY -->
+  <section class="section why" id="why">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Why Plug and Go</span>
+        <h2>Licensed, bonded, local, accountable.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="wcard reveal"><span class="n">1</span><div><b>State licensed, C-10</b><span>CSLB 1159810, active and verifiable. Unpermitted electrical can void insurance and stall a home sale.</span></div></div>
+        <div class="wcard reveal"><span class="n">2</span><div><b>Bonded</b><span>$25,000 contractor bond on file with the state.</span></div></div>
+        <div class="wcard reveal"><span class="n">3</span><div><b>One licensed contact</b><span>The electrician who quotes the job is the one who does it.</span></div></div>
+        <div class="wcard reveal"><span class="n">4</span><div><b>Based in Mountain View</b><span>Sunnyvale, Los Altos and Palo Alto are minutes away. No travel-time padding.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. AREA -->
+  <section class="section" id="area">
+    <div class="wrap area-grid">
+      <div class="reveal">
+        <span class="eyebrow">Service area</span>
+        <h2 style="margin:.6rem 0 .9rem">Mountain View and the Peninsula.</h2>
+        <p class="lead">Based in Mountain View. Serving northern Santa Clara County and the Mid-Peninsula.</p>
+        <div class="towns">
+          <span class="base">Mountain View</span><span>Sunnyvale</span><span>Palo Alto</span><span>Los Altos</span><span>Los Altos Hills</span><span>Cupertino</span><span>Santa Clara</span><span>Menlo Park</span><span>Campbell</span><span>San Jose (north)</span>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map of Mountain View, CA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Mountain+View,+CA&amp;z=11&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get a quote</span>
+        <h2 style="margin:.6rem 0 .9rem">Text a photo of your panel.</h2>
+        <p class="lead">That one photo answers most of the questions. You&rsquo;ll get a straight quote with scope, permit and price.</p>
+      </div>
+      <div class="c-grid reveal">
+        <div class="cbox"><span class="lbl">Call or text</span><a href="tel:+16506428318">(650) 642-8318</a><small>Mountain View, CA</small></div>
+        <div class="cbox"><span class="lbl">License</span><a class="sm" href="https://www.cslb.ca.gov/1159810" target="_blank" rel="noopener">CSLB 1159810 · C-10</a><small>Active · bonded $25,000</small></div>
+        <div class="cbox"><span class="lbl">Based in</span><a class="sm" href="https://www.google.com/maps/search/?api=1&amp;query=Mountain+View,+CA" target="_blank" rel="noopener">Mountain View, CA 94041</a><small>Serving the Peninsula</small></div>
+      </div>
+      <div class="c-actions">
+        <a class="btn btn-mint" href="tel:+16506428318">Call (650) 642-8318</a>
+        <a class="btn btn-ghost" style="color:#fff" href="sms:+16506428318">Send a text</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="callbar"><a href="tel:+16506428318">📞 Call now</a><a class="m" href="sms:+16506428318">Text a panel photo</a></div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3v5M15 3v5"/><path d="M6 8h12v3a6 6 0 01-12 0z"/><path d="M12 17v4"/></svg></span>
+        <span><b>Plug and Go Electrics</b><small style="color:rgba(255,255,255,.6)">Mountain View, California</small></span>
+      </a>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#ev">EV Chargers</a>
+        <a href="#services">Services</a>
+        <a href="#area">Area</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+16506428318">(650) 642-8318</a>
+      </nav>
+    </div>
+    <p class="foot-note">
+      Plug and Go Electrics &middot; Mountain View, CA &middot; (650) 642-8318 &middot; CSLB License 1159810, C-10 Electrical, bonded. License, bond and classification from the California Contractors State License Board. Service descriptions reflect standard C-10 scope &mdash; confirm specifics when you call. Charger brands listed are examples of UL-listed Level 2 equipment, not endorsements. Not affiliated with any similarly named business.
+      <br>&copy; <span id="yr"></span> Plug and Go Electrics. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+<script src="https://smb.airoxlab.com/api/t/script" defer></script>
+</body>
+</html>
