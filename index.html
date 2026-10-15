@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plug and Go Electrics | Licensed Electrician, Mountain View CA | EV Chargers &amp; Panels | (650) 642-8318</title>
 <meta name="description" content="Plug and Go Electrics is a licensed C-10 electrical contractor (CSLB 1159810) in Mountain View, CA. EV charger installation, panel upgrades, lighting, outlets, rewiring and troubleshooting across Mountain View, Sunnyvale, Palo Alto, Los Altos and Cupertino. Bonded. Call (650) 642-8318.">
-<meta name="theme-color" content="#0b2b26">
+<meta name="theme-color" content="#16181d">
 <meta property="og:title" content="Plug and Go Electrics | Mountain View, CA">
 <meta property="og:description" content="Licensed C-10 electrician, CSLB 1159810, bonded. EV chargers, panel upgrades, lighting and repairs in Mountain View and the Peninsula. (650) 642-8318.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,16 +13,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 <style>
   :root{
-    --pine:#0b2b26; --pine-2:#123d36; --mint:#19d3a2; --mint-deep:#12a67f; --lime:#d9f99d;
-    --white:#ffffff; --cloud:#f3f7f5; --cloud-2:#e4ece8;
-    --ink:#0f1f1b; --muted:#56706a; --line:#d9e3de;
+    --pine:#16181d; --pine-2:#1c1f26; --mint:#ff9b3d; --mint-deep:#c9651a; --lime:#ffb15c;
+    --white:#ffffff; --cloud:#f5f4f1; --cloud-2:#eae7e1;
+    --ink:#16181d; --muted:#6b707a; --line:#dedbd4;
     --bg:var(--cloud); --surface:var(--white); --text:var(--ink);
-    --r:18px; --shadow:0 22px 44px -28px rgba(11,43,38,.45);
+    --r:18px; --shadow:0 22px 44px -28px rgba(22,24,29,.45);
   }
   @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){--bg:#0a1a17;--surface:#10251f;--cloud-2:#163129;--text:#eaf4f0;--muted:#9fb8b0;--line:#1f3a33;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
+    :root:not([data-theme="light"]){--bg:#111318;--surface:#1c1f26;--cloud-2:#262a33;--text:#f2f1ee;--muted:#a3a8b0;--line:#30343e;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
   }
-  :root[data-theme="dark"]{--bg:#0a1a17;--surface:#10251f;--cloud-2:#163129;--text:#eaf4f0;--muted:#9fb8b0;--line:#1f3a33;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
+  :root[data-theme="dark"]{--bg:#111318;--surface:#1c1f26;--cloud-2:#262a33;--text:#f2f1ee;--muted:#a3a8b0;--line:#30343e;--shadow:0 22px 44px -28px rgba(0,0,0,.7)}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--bg);color:var(--text);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -59,10 +59,12 @@
   .tap{display:inline-flex;align-items:center;gap:.4rem;background:var(--pine);color:#fff;text-decoration:none;font-weight:700;padding:.6rem 1.05rem;border-radius:999px;font-size:.9rem}
   @media(min-width:940px){nav.top{display:flex}.head-cta{display:block}}
 
-  .hero{background:var(--pine);color:#fff;position:relative;overflow:hidden}
-  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 85% 15%,rgba(25,211,162,.22),transparent 65%),radial-gradient(35% 45% at 5% 95%,rgba(217,249,157,.12),transparent 65%)}
+  .hero{background:var(--pine);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-2;opacity:.45}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(22,24,29,.96) 0%,rgba(22,24,29,.82) 50%,rgba(22,24,29,.55) 100%)}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(50% 60% at 85% 15%,rgba(255,155,61,.22),transparent 65%),radial-gradient(35% 45% at 5% 95%,rgba(255,177,92,.12),transparent 65%)}
   .hero-grid{position:relative;display:grid;gap:2.5rem;align-items:center;padding:4.5rem 0 4rem}
-  .hero .tag{display:inline-flex;align-items:center;gap:.6rem;background:rgba(25,211,162,.12);border:1px solid rgba(25,211,162,.45);padding:.45rem .95rem;border-radius:999px;font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem;color:var(--mint)}
+  .hero .tag{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,155,61,.12);border:1px solid rgba(255,155,61,.45);padding:.45rem .95rem;border-radius:999px;font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem;color:var(--mint)}
   .hero h1{font-size:clamp(2.7rem,6.8vw,5.2rem);max-width:13ch}
   .hero h1 span{color:var(--mint)}
   .hero p{font-size:clamp(1.05rem,1.5vw,1.22rem);max-width:52ch;margin:1.1rem 0 1.6rem;color:rgba(255,255,255,.88)}
@@ -99,7 +101,7 @@
   .brands span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:.35rem .75rem;border-radius:999px;font-size:.82rem;font-weight:600}
   .checks{list-style:none;padding:0;margin:1.2rem 0 1.6rem;display:grid;gap:.6rem}
   .checks li{display:flex;gap:.7rem;align-items:flex-start}
-  .checks li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--mint);margin-top:.15rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b2b26' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E");background-size:13px;background-repeat:no-repeat;background-position:center}
+  .checks li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--mint);margin-top:.15rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316181d' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E");background-size:13px;background-repeat:no-repeat;background-position:center}
   @media(min-width:880px){.ev-grid{grid-template-columns:6fr 5fr}}
 
   .svc-grid{display:grid;gap:1rem;grid-template-columns:1fr}
@@ -111,6 +113,19 @@
   @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
   @media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
 
+
+  .job{background:var(--pine);color:#fff}
+  .job .eyebrow{color:var(--mint)}
+  .job .lead{color:rgba(255,255,255,.8)}
+  .jgrid{display:grid;gap:.8rem;grid-template-columns:repeat(2,1fr)}
+  .jgrid figure{margin:0;position:relative;overflow:hidden;border-radius:14px;background:var(--pine-2)}
+  .jgrid img{width:100%;aspect-ratio:9/14;object-fit:cover;transition:transform .5s}
+  .jgrid figure:hover img{transform:scale(1.04)}
+  .jgrid figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .8rem .7rem;background:linear-gradient(180deg,transparent,rgba(22,24,29,.92));font-size:.82rem;font-weight:700}
+  @media(min-width:760px){.jgrid{grid-template-columns:repeat(4,1fr)}}
+  .yt{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.6rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:1.2rem 1.4rem}
+  .yt b{font-family:"Sora",sans-serif;font-size:1.15rem}
+  .yt span{color:rgba(255,255,255,.75);font-size:.95rem;display:block}
   .why{background:var(--surface);border-block:1px solid var(--line)}
   .why-grid{display:grid;gap:1rem;grid-template-columns:1fr}
   .wcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem;display:flex;gap:1rem;align-items:flex-start}
@@ -148,7 +163,7 @@
   body{padding-bottom:3.4rem}
   @media(min-width:940px){body{padding-bottom:0}}
 
-  footer.site{background:#071d19;color:rgba(255,255,255,.75);padding:2.2rem 0 1.6rem;font-size:.88rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer.site{background:#0f1115;color:rgba(255,255,255,.75);padding:2.2rem 0 1.6rem;font-size:.88rem;border-top:1px solid rgba(255,255,255,.08)}
   .foot-top{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
   .foot-top .brand b{color:#fff}
   .foot-links{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;font-weight:600}
@@ -173,6 +188,7 @@
     <nav class="top" aria-label="Sections">
       <a href="#ev">EV Chargers</a>
       <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
       <a href="#why">Why Us</a>
       <a href="#area">Service Area</a>
       <a href="#contact">Contact</a>
@@ -185,11 +201,12 @@
 
   <!-- 1. HERO -->
   <section class="hero" id="home">
+    <img class="bg" src="img/hero-panel.jpg" alt="Plug and Go Electrics working on an exterior electrical panel" fetchpriority="high">
     <div class="wrap hero-grid">
       <div>
         <span class="tag">Licensed C-10 · Bonded · Mountain View</span>
-        <h1>Plug in. <span>Charge up.</span> Done to code.</h1>
-        <p>Plug and Go Electrics is a state-licensed C-10 electrical contractor based in Mountain View, serving Sunnyvale, Palo Alto, Los Altos, Cupertino and the Peninsula. EV charger installs, panel upgrades, lighting, outlets, rewiring and troubleshooting &mdash; by the licensed electrician, not a subcontractor.</p>
+        <h1>Craftsmanship <span>in motion.</span></h1>
+        <p>Plug and Go Electrics is a state-licensed C-10 electrical contractor based in Mountain View, serving the Bay Area &mdash; Sunnyvale, Palo Alto, Los Altos, Cupertino and the Peninsula. Clean installs, residential and commercial: EV charger installs, panel upgrades, lighting, outlets, rewiring and troubleshooting &mdash; by the licensed electrician, not a subcontractor.</p>
         <div class="hero-actions">
           <a class="btn btn-mint" href="tel:+16506428318">Call (650) 642-8318</a>
           <a class="btn btn-white" href="#ev">EV charger installs</a>
@@ -268,6 +285,28 @@
     </div>
   </section>
 
+  <!-- 4b. ON THE JOB -->
+  <section class="section job" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">On the job</span>
+        <h2 style="margin:.6rem 0 .9rem">Clean installs. Real jobsite action.</h2>
+        <p class="lead">Straight from our YouTube Shorts &mdash; panels, circuits, outlets and service work around the Bay Area.</p>
+      </div>
+      <div class="jgrid reveal">
+        <figure><img src="img/panel-new.jpg" alt="A new breaker panel installed and dressed" loading="lazy"><figcaption>New panel install</figcaption></figure>
+        <figure><img src="img/outlet-240v.jpg" alt="Installing a 240V receptacle" loading="lazy"><figcaption>240V outlet</figcaption></figure>
+        <figure><img src="img/meter-test.jpg" alt="Clamp meter testing at a panel" loading="lazy"><figcaption>Testing &amp; troubleshooting</figcaption></figure>
+        <figure><img src="img/owner-panel.jpg" alt="Plug and Go Electrics at a finished panel" loading="lazy"><figcaption>Panel upgrade</figcaption></figure>
+        <figure><img src="img/panel-wiring.jpg" alt="Panel wiring during a service upgrade" loading="lazy"><figcaption>Service upgrade</figcaption></figure>
+        <figure><img src="img/outlets.jpg" alt="New duplex outlets installed" loading="lazy"><figcaption>New circuits</figcaption></figure>
+        <figure><img src="img/attic.jpg" alt="Running wire in the attic in protective gear" loading="lazy"><figcaption>Attic wiring</figcaption></figure>
+        <figure><img src="img/service-meter.jpg" alt="Exterior service and meter work" loading="lazy"><figcaption>Exterior service</figcaption></figure>
+      </div>
+      <div class="yt reveal"><div><b>Watch us work</b><span>Daily Shorts from real jobs &mdash; @plugandgoelectrics</span></div><a class="btn btn-mint" href="https://youtube.com/@plugandgoelectrics" target="_blank" rel="noopener">▶ YouTube channel</a></div>
+    </div>
+  </section>
+
   <!-- 5. WHY -->
   <section class="section why" id="why">
     <div class="wrap">
@@ -312,7 +351,7 @@
       <div class="c-grid reveal">
         <div class="cbox"><span class="lbl">Call or text</span><a href="tel:+16506428318">(650) 642-8318</a><small>Mountain View, CA</small></div>
         <div class="cbox"><span class="lbl">License</span><a class="sm" href="https://www.cslb.ca.gov/1159810" target="_blank" rel="noopener">CSLB 1159810 · C-10</a><small>Active · bonded $25,000</small></div>
-        <div class="cbox"><span class="lbl">Based in</span><a class="sm" href="https://www.google.com/maps/search/?api=1&amp;query=Mountain+View,+CA" target="_blank" rel="noopener">Mountain View, CA 94041</a><small>Serving the Peninsula</small></div>
+        <div class="cbox"><span class="lbl">Email</span><a class="sm" href="mailto:plugngoelectrics@gmail.com">plugngoelectrics@gmail.com</a><small>Mountain View · Bay Area · <a href="https://youtube.com/@plugandgoelectrics" target="_blank" rel="noopener" style="font-size:inherit">YouTube</a></small></div>
       </div>
       <div class="c-actions">
         <a class="btn btn-mint" href="tel:+16506428318">Call (650) 642-8318</a>
